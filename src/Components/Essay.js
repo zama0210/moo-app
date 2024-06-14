@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import aubert from "../Assets/aubert.jpg";
+import generator from "../Assets/Schermafbeelding 2019-07-20 om 15.17.50.png";
+import glider from "../Assets/Gospers_glider_gun.gif";
+import example from "../Assets/download (12).jpeg";
 import "../Styles/essay.css";
 
 const Essay = () => {
@@ -423,6 +426,28 @@ const Essay = () => {
             production.
           </a>
         </p>
+      </div>
+      <div className="essay-images">
+        <img
+          className={isVisible ? "show" : ""}
+          src={example}
+          alt="Example of exquisite corps"
+        />
+        <img
+          className={isVisible ? "show" : ""}
+          src={generator}
+          alt="Poietic Generator"
+        />
+        <img
+          className={isVisible ? "show" : ""}
+          src={aubert}
+          alt="Creator of Poietic Generator"
+        />
+        <img
+          className={isVisible ? "show" : ""}
+          src={glider}
+          alt="Gospers Glider"
+        />
       </div>
     </div>
   );
