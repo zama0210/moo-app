@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import aubert from "../Assets/aubert.jpg";
 import "../Styles/essay.css";
 
 const Essay = () => {
@@ -422,23 +423,6 @@ const Essay = () => {
             production.
           </a>
         </p>
-      </div>
-      <div className="essay-images">
-        <img
-          className={isVisible ? "show" : ""}
-          src="image1.jpg"
-          alt="Description 1"
-        />
-        <img
-          className={isVisible ? "show" : ""}
-          src="image2.jpg"
-          alt="Description 2"
-        />
-        <img
-          className={isVisible ? "show" : ""}
-          src="image3.jpg"
-          alt="Description 3"
-        />
       </div>
     </div>
   );

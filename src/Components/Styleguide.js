@@ -34,6 +34,10 @@ const Styleguide = () => {
           that the overall theme is not compromised. I have decided to use
           #13151E, #43598E, #82559B, #F5F5FA.
         </p>
+        <p>
+          All images used, besides the wireframes, have been take from
+          Pinterest.
+        </p>
       </div>
     </div>
   );

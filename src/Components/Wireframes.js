@@ -69,11 +69,6 @@ const Wireframes = () => {
           src={wireframeImage}
           alt="Wireframe"
         />
-        <img
-          className={isVisible ? "show" : ""}
-          src="image2.jpg"
-          alt="Updated wireframe"
-        />
       </div>
     </div>
   );
