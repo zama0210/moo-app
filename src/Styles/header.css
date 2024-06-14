@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(
+    19,
+    21,
+    30,
+    1
+  ); /* Replace with your desired opaque color */
+  transition: background-color 0.3s ease;
+}
+.header.transparent {
+  background-color: transparent;
+}
+
+.header--float {
+  background-color: rgba(19, 21, 30, 1);
+}
+
+.header__mamamoo-logo {
+  margin-top: -5px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.header__nav {
+  display: flex;
+  list-style: none;
+  transform: translateX(-10%);
+}
+
+.header__nav-item {
+  margin-left: 25px;
+  color: #f5f5fa;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header__nav-item a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,57 @@
+.media-card {
+  position: relative;
+  cursor: pointer;
+  transition: transform 360ms;
+  margin: 10px; /* Add margin for spacing between cards */
+}
+
+.media-card:hover {
+  transform: scale(
+    1.05
+  ); /* Slightly reduce the scale to avoid excessive size */
+}
+
+.media-card__poster {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+  height: 200px; /* Adjust height for better size */
+  transition: transform 360ms;
+}
+
+.media-card__poster--large {
+  height: 300px; /* Adjust height for large cards */
+}
+
+.media-card__cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 21, 30, 1);
+  opacity: 0;
+  transition: opacity 360ms;
+}
+
+.media-card__cover:hover {
+  opacity: 1;
+}
+
+.media-card__name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.media-card__description {
+  font-size: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

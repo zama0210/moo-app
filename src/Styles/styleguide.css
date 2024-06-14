@@ -1,0 +1,64 @@
+/* body.essay-background {
+  background-image: url("/src/Assets/essay-background.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+} */
+
+.essay-container {
+  padding: 80px 20px 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #13151e;
+  color: #f5f5fa;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  border-radius: 10px;
+}
+
+.essay-container h1,
+.essay-container h2 {
+  color: #43598e;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.essay-container p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.essay-container a {
+  color: #82559b;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.essay-container a:hover {
+  color: #f5f5fa;
+  text-decoration: underline;
+}
+
+.reference-list {
+  margin-top: 40px;
+  text-align: left;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.essay-container {
+  animation: fadeIn 2s ease-in-out;
+}
