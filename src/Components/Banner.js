@@ -29,14 +29,12 @@ const Banner = () => {
       description:
         "Kim Yong-sun (김용선) also known as Solar is one of the singers within the group. Her latest release is her EP 'Colours',released on the 30th of April 2024.",
     },
-
     {
       image: Banner4,
       title: "Moonbyul",
       description:
         "Moon Byul-yi (문별이) also known as Moonbyul is one of the rappers within the group. Her latest release is an Original Televison Soundtrack (OST) called Frankly Speaking. ",
     },
-
     {
       image: Banner5,
       title: "Hwa Sa",
@@ -59,13 +57,12 @@ const Banner = () => {
     <div className="banner">
       <Slider {...settings}>
         {banners.map((banner, index) => (
-          <div
-            key={index}
-            className="banner__slide"
-            style={{
-              backgroundImage: `url(${banner.image})`,
-            }}
-          >
+          <div key={index} className="banner__slide">
+            <img
+              src={banner.image}
+              alt={banner.title}
+              className="banner__image"
+            />
             <div className="banner__contents">
               <h1 className="banner__title">{banner.title}</h1>
               <div className="banner__buttons">

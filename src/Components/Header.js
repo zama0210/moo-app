@@ -43,7 +43,10 @@ const Header = () => {
           <Link to="/essay">Essay</Link>
         </li>
         <li className="header__nav-item">
-          <Link to="/art">Art</Link>
+          <Link to="/internetart">Art</Link>
+        </li>
+        <li className="header__nav-item">
+          <Link to="/planning">Planning</Link>
         </li>
       </ul>
     </div>

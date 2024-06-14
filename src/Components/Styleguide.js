@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import "../Styles/styleguide.css";
 
 const Styleguide = () => {
   const styleRef = useRef(null);
@@ -24,46 +25,15 @@ const Styleguide = () => {
       ref={styleRef}
       className={`essay-container ${isVisible ? "essay-show" : ""}`}
     >
-      <h1 className="essay-title">Critical Analysis Essay</h1>
+      <h1 className="essay-title">Styleguide</h1>
       <div className="essay-content">
-        <p>Para 1</p>
-        <p>para 2</p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-
+        <h2 className="sub-heading">General Styling</h2>
         <p>
-          <a
-            href="https://www.academia.edu/25652024/Role_of_Simplicity_in_Creative_Behaviour_The_Case_of_the_Poietic_Generator"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Dessalles, J., Saillenfest, A., & Auber, O. (n.d.). Role of
-            Simplicity in Creative Behaviour: The Case of the Poietic Generator.
-            www.academia.edu.
-          </a>
+          The application is dark-themed, following UI elements that are similar
+          to Netflix's. The academic elements are in their own seperate pages so
+          that the overall theme is not compromised. I have decided to use
+          #13151E, #43598E, #82559B, #F5F5FA.
         </p>
-      </div>
-      <div className="essay-images">
-        <img
-          className={isVisible ? "show" : ""}
-          src="image1.jpg"
-          alt="Description 1"
-        />
-        <img
-          className={isVisible ? "show" : ""}
-          src="image2.jpg"
-          alt="Description 2"
-        />
-        <img
-          className={isVisible ? "show" : ""}
-          src="image3.jpg"
-          alt="Description 3"
-        />
       </div>
     </div>
   );

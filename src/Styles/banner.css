@@ -1,28 +1,34 @@
 .banner {
   position: relative;
   color: #f5f5fa;
-  object-fit: contain;
   height: 500px;
-  background-size: cover;
-  background-position: center center;
 }
 
 .banner__slide {
+  position: relative;
   display: flex !important;
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-size: cover;
-  background-position: center;
+}
+
+.banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .banner__contents {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100%;
-  overflow: hidden;
   padding: 20px;
+  text-align: center;
 }
 
 .banner__title {
@@ -72,6 +78,6 @@
     180deg,
     transparent,
     rgba(19, 21, 30, 0.61),
-    #13151e
+      #13151e   
   );
 }

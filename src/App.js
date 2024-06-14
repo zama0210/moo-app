@@ -6,6 +6,7 @@ import Styleguide from "./Components/Styleguide";
 import Wireframes from "./Components/Wireframes";
 import Essay from "./Components/Essay";
 import InternetArt from "./Components/InternetArt";
+import Planning from "./Components/Planning";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Wireframes" element={<Wireframes />} />
         <Route path="/Essay" element={<Essay />} />
         <Route path="/InternetArt" element={<InternetArt />} />
+        <Route path="/Planning" element={<Planning />} />
       </Routes>
     </Router>
   );
